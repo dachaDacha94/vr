@@ -1,0 +1,835 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+
+:root {
+  --color-text: #fff;
+  --color-bg: #101315;
+  --color-acent: #e32966;
+  --color-gray: rgb(199, 199, 199);
+  --wrapper-width: 1398px;
+}
+
+body {
+  background: var(--color-bg);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: var(--wrapper-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-holder {
+  width: 100%;
+  height: 956px;
+  position: absolute;
+  background-position: top;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-holder__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 120px;
+}
+.logo-link {
+  width: 93.617px;
+  height: 26.208px;
+}
+.header-nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header-nav-tel {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header-nav-link {
+  gap: 50px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 24px */
+}
+.header-nav-button {
+  background-color: var(--color-bg);
+  padding: 12px 30px;
+  border-radius: 32px;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 24px */
+}
+.header-nav-tel {
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 24px */
+}
+
+/* promo */
+.promo .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.heading {
+  max-width: 489px;
+  margin-top: 194px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 56.64px */
+  text-transform: uppercase;
+}
+.heading-text {
+  margin-bottom: 40px;
+  max-width: 464px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 28.8px */
+}
+.promo-button {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  margin-bottom: 185px;
+}
+.buttton-red {
+  padding: 12px 30px;
+  border-radius: 32px;
+  background: var(--color-acent);
+  box-shadow: 0px 9px 26px 0px rgba(227, 41, 102, 0.3);
+  color: var(--color-text) f;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 24px */
+}
+.button-black {
+  background: transparent;
+  padding: 12px 30px;
+  border-radius: 32px;
+  border: 1.5px solid var(--color-acent);
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 24px */
+}
+.sochial-icon {
+  margin-bottom: 122px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+.sochial-img {
+  width: 32px;
+  height: 32px;
+}
+
+/* about */
+.about {
+  margin-top: 60px;
+  margin-bottom: 94px;
+}
+
+.about .wrapper {
+  align-items: start;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.about-text__content {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.about-subheading {
+  margin-bottom: 62px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 47.2px */
+  text-transform: uppercase;
+}
+
+/* .about-img {
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} */
+
+.about-svg {
+  margin-bottom: 35px;
+}
+
+.about-text {
+  max-width: 337px;
+  margin-bottom: 35px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 21.24px */
+}
+
+.about-text-top {
+  max-width: 337px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 21.24px */
+}
+
+/* product */
+.product .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 95px;
+}
+
+.product-heading {
+  margin-bottom: 94px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 47.2px */
+  text-transform: uppercase;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 114px;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(
+      72.29% 44.07% at 50% 93.92%,
+      #a40a79 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      45.56% 43.91% at 4.78% 4.31%,
+      #008df3 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      67.34% 60.82% at 98.22% 1.22%,
+      #dc18c8 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(22, 43, 237, 0.5);
+}
+
+.card-content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #101315;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.card-img {
+  width: 391px;
+  height: 213px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 26px 36px;
+}
+
+.card-subtitle {
+  margin-top: 26px;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 118%; /* 21.24px */
+  z-index: 2;
+}
+
+.card-text {
+  max-width: 319px;
+  margin-bottom: 22px;
+  color: var(--color-text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 21.24px */
+  z-index: 2;
+}
+
+.card-button {
+  z-index: 2;
+  margin-bottom: 50px;
+  padding: 12px 30px;
+  border-radius: 32px;
+  border: 1px solid var(--color-acent);
+  background: var(--color-acent);
+  box-shadow: 0px 9px 26px 0px rgba(227, 41, 102, 0.3);
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 24px */
+}
+
+/* game section slider */
+.games-section .wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.subheading {
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 47.2px */
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  text-align: left;
+}
+.games-section-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.games-section-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+.games-section-btn {
+  position: relative;
+  padding-right: 43px;
+  background-color: transparent;
+  background-image: url("../assets/img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 28.32px */
+}
+
+.active {
+  color: var(--color-acent);
+  background-image: url("../assets/img/svg/arrow-red.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.game-section-swiper {
+  width: 100%;
+  max-width: 1030px;
+  padding-left: 60px;
+  padding-right: 243px;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.game-section-img {
+  width: 368px;
+  height: 436px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--color-acent);
+}
+
+/* price */
+.price {
+  margin-bottom: 100px;
+}
+
+.price .wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.price-subheding {
+  margin-bottom: 65px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 354.81px;
+  width: 100%;
+  height: 98px;
+  gap: 3px;
+  background: rgba(196, 196, 196, 0.2);
+}
+
+.table-header,
+.table-body {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tc {
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 23.6px */
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 34px;
+}
+
+.tc-h {
+  background: #1f1f22;
+  height: 131.489px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 23.6px */
+}
+
+.tc-split {
+  background-color: transparent;
+  background-image: url("../assets/img/svg/triagle1.svg"),
+    url("../assets/img/svg/triagle2.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom, top right;
+  position: relative;
+}
+
+.time {
+  position: absolute;
+  right: 21px;
+  top: 20px;
+}
+
+.players {
+  position: absolute;
+  left: 21px;
+  bottom: 21px;
+}
+
+.table-btn {
+  margin: 0 auto;
+  padding: 15px 100px;
+  position: relative;
+  border: 1px solid var(--color-acent);
+  border-radius: 32px;
+  box-shadow: 0px 9px 26px 0px rgba(227, 41, 102, 0.3);
+  background-color: var(--color-acent);
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  background-image: url("../assets/img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+/* gallery */
+.gallery .wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.gallery-heading {
+  margin-bottom: 64px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.gallery-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gallery-content-img {
+}
+
+.swiper-slide {
+}
+
+.gallery-section__swiper {
+  width: 100%;
+  max-width: 446px;
+}
+
+.gallery-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 83px;
+  padding-top: 50px;
+  position: relative;
+  width: 446px;
+  height: 529px;
+  /* Тень */
+  box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+  background: radial-gradient(
+        72.11% 44.18% at 50% 94%,
+        rgb(164, 10, 121),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        45.8% 43.84% at 5% 4%,
+        rgb(0, 141, 243),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        66.53% 60.61% at 98% 1%,
+        rgb(220, 24, 200),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    rgba(22, 43, 237, 0.5);
+}
+
+.gallery-card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #101315;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.gallery-card__text {
+  position: relative;
+  padding-bottom: 15px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-text);
+  z-index: 2;
+}
+
+.gallery-section-swiper__navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  top: 456px;
+  left: 130px;
+  z-index: 5;
+}
+
+.swiper-pagination-custom {
+  max-width: 112px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* contacts */
+.contact {
+  margin-top: 95px;
+  margin-bottom: 66px;
+}
+
+.contacts-left {
+  display: flex;
+  align-items: normal;
+  flex-direction: column;
+}
+
+.contacts-heading {
+  margin-bottom: 40px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contacts-subtitle {
+  margin-bottom: 25px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contacts-paragraf {
+  max-width: 272px;
+  margin-bottom: 32px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contacts-telephone {
+  margin-bottom: 32px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contacts-tel {
+  margin-bottom: 24px;
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contacts-sochial {
+  margin-bottom: 40px;
+  color: var(--color-text);
+  font-family: Dela Gothic One;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contacts-sochial-link {
+}
+
+.contacts-right {
+}
+
+.contacts-map {
+  border: none;
+  filter: grayscale(100%) invert(100%);
+}
+
+/* footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+  background: radial-gradient(
+        73% 44.18% at 50% 94%,
+        rgb(164, 10, 121),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        64.01% 43.84% at 5% 4%,
+        rgb(0, 141, 243),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        107% 60.61% at 98% 1%,
+        rgb(220, 24, 200),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    rgba(22, 43, 237, 0.5);
+  opacity: 0.9;
+}
+
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #101315;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  z-index: 2;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  z-index: 2;
+}
+
+.footer-nav-link {
+  color: var(--color-text);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-privacy {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-privacy-text {
+  color: var(--color-gray);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1%;
+  text-align: left;
+}
